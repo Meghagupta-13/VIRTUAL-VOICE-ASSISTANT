@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Virtual Voice Assistant</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="app">
+  <header>
+    <h1>Virtual Voice Assistant</h1>
+    <p id="status">Tap the mic and speak</p>
+  </header>
+
+  <button id="mic" class="mic" aria-label="Start listening">
+    <svg viewBox="0 0 24 24" width="34" height="34" fill="currentColor" aria-hidden="true">
+      <path d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21h2v-3.08A7 7 0 0 0 19 11h-2z"/>
+    </svg>
+  </button>
+
+  <section id="chat" class="chat" aria-live="polite"></section>
+
+  <form id="textForm" class="text-form">
+    <input id="textInput" type="text" placeholder="Or type a command" autocomplete="off">
+    <button type="submit">Send</button>
+  </form>
+
+  <details class="help">
+    <summary>What can I ask?</summary>
+    <ul>
+      <li>"What time is it?" / "What is today's date?"</li>
+      <li>"Open YouTube" / "Open Google" / "Open GitHub"</li>
+      <li>"Search for Java interview questions"</li>
+      <li>"Play arijit singh on YouTube"</li>
+      <li>"Tell me a joke" / "Who are you?"</li>
+    </ul>
+  </details>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
